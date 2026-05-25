@@ -101,7 +101,7 @@ class _SplashScreenState extends State<SplashScreen>
                       ),
                       const SizedBox(height: 24),
                       Text(
-                        "Nova Mart",
+                        "Beso Mart",
                         style: GoogleFonts.poppins(
                           fontSize: 36,
                           fontWeight: FontWeight.w800,

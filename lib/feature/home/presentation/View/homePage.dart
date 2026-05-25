@@ -54,7 +54,7 @@ class _HomepageState extends State<Homepage> {
                   ),
                   const SizedBox(width: 12),
                   Text(
-                    "Nova Mart",
+                    "Beso Mart",
                     style: GoogleFonts.poppins(
                       fontSize: 22,
                       fontWeight: FontWeight.w700,
@@ -140,7 +140,9 @@ class _HomepageState extends State<Homepage> {
                                 side: BorderSide(
                                   color: isSelected
                                       ? Colors.transparent
-                                      : const Color(0xFFE2E8F0),
+                                      : Theme.of(context).brightness == Brightness.dark
+                                          ? const Color(0xFF334155)
+                                          : const Color(0xFFE2E8F0),
                                 ),
                               ),
                             ),
@@ -443,7 +445,9 @@ class _HomepageState extends State<Homepage> {
               decoration: BoxDecoration(
                 color: _carouselIndex == index
                     ? AppTheme.primaryColor
-                    : const Color(0xFFCBD5E1),
+                    : Theme.of(context).brightness == Brightness.dark
+                        ? const Color(0xFF475569)
+                        : const Color(0xFFCBD5E1),
                 borderRadius: BorderRadius.circular(4),
               ),
             ),
