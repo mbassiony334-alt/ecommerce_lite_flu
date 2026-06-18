@@ -54,7 +54,7 @@ class _HomepageState extends State<Homepage> {
                   ),
                   const SizedBox(width: 12),
                   Text(
-                    "Beso Mart",
+                    "Nova App",
                     style: GoogleFonts.poppins(
                       fontSize: 22,
                       fontWeight: FontWeight.w700,
